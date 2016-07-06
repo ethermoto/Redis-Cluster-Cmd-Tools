@@ -1,0 +1,36 @@
+Usage: redis-trib [password] <command> <options> <arguments ...>
+
+  create          host1:port1 ... hostN:portN
+                  --replicas <arg>
+  check           host:port
+  info            host:port
+  fix             host:port
+                  --timeout <arg>
+  reshard         host:port
+                  --from <arg>
+                  --to <arg>
+                  --slots <arg>
+                  --yes
+                  --timeout <arg>
+                  --pipeline <arg>
+  rebalance       host:port
+                  --weight <arg>
+                  --auto-weights
+                  --use-empty-masters
+                  --timeout <arg>
+                  --simulate
+                  --pipeline <arg>
+                  --threshold <arg>
+  add-node        new_host:new_port existing_host:existing_port
+                  --slave
+                  --master-id <arg>
+  del-node        host:port node_id
+  set-timeout     host:port milliseconds
+  call            host:port command arg arg .. arg
+  import          host:port
+                  --from <arg>
+                  --copy
+                  --replace
+  help            (show this help)
+
+For check, fix, reshard, del-node, set-timeout you can specify the host and port of any working node in the cluster.
