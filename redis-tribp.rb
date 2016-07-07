@@ -1296,8 +1296,6 @@ class RedisTrib
 
   def create_cluster_cmd(argv, opt)
     opt = {'replicas' => 0}.merge(opt)
-    puts opt
-    exit 0
     @replicas = opt['replicas'].to_i
 
     xputs ">>> Creating cluster"
@@ -1712,7 +1710,7 @@ cmd_spec = COMMANDS[ARGV[0].downcase]
 if cmd_spec==nil
   $clusterPassword=ARGV[0]
   $cmdBeginIndex=1
-  puts "get cluster is : #{$clusterPassword}"
+  puts "get cluster password is : #{$clusterPassword}"
   cmd_spec = COMMANDS[ARGV[$cmdBeginIndex].downcase]
 end
 
