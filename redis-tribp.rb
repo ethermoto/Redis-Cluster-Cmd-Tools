@@ -1684,7 +1684,7 @@ ALLOWED_OPTIONS={
 }
 
 def show_help
-  puts "Usage: redis-trib [password] <command> <options> <arguments ...>\n\n"
+  puts "Usage: redis-tribp [password] <command> <options> <arguments ...>\n\n"
   COMMANDS.each { |k, v|
     o = ""
     puts "  #{k.ljust(15)} #{v[2]}"
