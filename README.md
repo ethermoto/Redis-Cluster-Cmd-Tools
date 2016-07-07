@@ -1,5 +1,5 @@
 # Redis-Cluster-Cmd-Tools
 
-Usage: redis-trib [password] <command> <options> <arguments ...>
+Usage: redis-tribp [password] <command> <options> <arguments ...>
 
 only add [password]
